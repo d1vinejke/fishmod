@@ -1,0 +1,119 @@
+body {
+   background-image: url(img/background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.header-game-h1{
+   text-align: center;
+   font-style: italic;
+   color: rgb(43, 43, 43);
+   margin-top: 35px;
+   letter-spacing: 3px;
+}
+.footer-game-p{
+   font-size: 20px;
+   font-style: italic;
+   position: absolute;
+   bottom: 0;
+   right: 15px;
+   background-color: #914dff;
+}
+.hidden{
+   display: none;
+}
+#smallFish {
+   width: 150px;
+   height: 100px;
+   position: absolute;
+   left: 400px;
+   z-index: 1;
+}
+.smallFish-initial {
+   top: 360px;
+}
+.smallFish-up {
+   top: 210px;
+}
+.smallFish-down {
+   top: 500px;
+}
+#bigFish {
+   width: 370px;
+   height: 210px;
+   position: absolute;
+   top: 270px;
+   animation: bigFishMove 1.1s infinite linear;
+   z-index: 2;
+}
+@keyframes bigFishMove {
+   0% {
+       left: 1100px;
+   }
+   100% {
+       left: 0px;
+   }
+}
+.fishes{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+#smallFish-screen{
+   width: 200px;
+   height: 130px;
+   margin: 155px -35px 0 0;
+}
+#bigFish-screen{
+   width: 560px;
+   height: 320px;
+}
+
+.playScreen-buttons{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+#bnt-start{
+   width: 300px;
+   height: 70px;
+   font-size: 60px;
+   background: linear-gradient(#914dff ,#299fff, #00ffc8);
+   border: 0;
+   border-radius: 10px;  
+   text-transform: uppercase;
+}
+#bnt-start:hover {
+   color: #00ffc8;
+   border: 2px solid #00ffc8;
+   text-shadow: 2px 2px 2px black;
+}
+#inputName{
+   width: 300px;
+   height: 70px;
+   font-size: 60px;
+   background: linear-gradient(#914dff ,#299fff, #00ffc8);
+   border: 0;
+   border-radius: 10px;  
+   text-transform: uppercase;
+}
+input[type=text] {
+   width: 296px;
+   height: 70px;
+   font-size: 30px;
+   text-align: center;
+   background: linear-gradient(#b384ff ,#6bbcff, #5cffdc);
+   opacity: 0.7;
+   border: 0;
+   border-radius: 10px;
+   display: flex;
+   align-self: flex-start;
+}
+
+.container{
+   text-align: center;
+   font-size: 28px;
+}
+
+#user_id{
+   display: none !important;
+}
